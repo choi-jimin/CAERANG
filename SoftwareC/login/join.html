@@ -4,41 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zootopedia</title>
     <script src="https://kit.fontawesome.com/c58241218c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="join_css.css">
+    <link rel="stylesheet" href="join.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div id="nav_name">
-                <i class="fa-solid fa-film"></i>
-                <h2>주토피디아</h2>
+                <a href="/Zoo/home/home.html"><i class="fa-solid fa-film"></i></a>
+                <a href="/Zoo/home/home.html"><h2>주토피디아</h2></a>
             </div>
             <div id="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input id="movie_search" type="text" placeholder="원하는 영화 검색">
             </div>
             <div id="login_bar">
-                <a href=""><h4>로그인</h4></a>
-                <a href=""><h4>회원가입</h4></a>
+                <a href="/Zoo/home/home.html"><h4>홈</h4></a>
+                <a href="/Zoo/login/login.html"><h4>로그인</h4></a>
+                <a href="/Zoo/join/join.html"><h4>회원가입</h4></a>
             </div>
         </nav>
     </header>
     <section id="section">
         <h1>회원가입</h1>
         <div id="join"> 
-            <h5>아이디</h5>
-            <input id="id" type="text" placeholder="아이디"> 
-            <h5>비밀번호</h5>
-            <input id="password" type="text" placeholder="비밀번호"> 
-            <h5>닉네임</h5>
-            <input id="nickname" type="text" placeholder="닉네임">
-            <h5>이메일</h5>
-            <input id="email" type="email" placeholder="이메일">
+            <form id="joinForm" action="">
+                <!-- 아이디 -->
+                <label for="join_id"><h5>아이디<p id="star">*</p></h5></label>
+                <input id="join_id" type="text" placeholder="아이디"> 
+                <!-- 비밀번호 -->
+                <label for="join_password"><h5>비밀번호<p id="star">*</p></h5></label>
+                <input id="join_password" type="text" placeholder="비밀번호"> 
+                <!-- 닉네임 -->
+                <label for="join_nickname"><h5>닉네임<p id="star">*</p></h5></label>
+                <input id="join_nickname" type="text" placeholder="닉네임" required>
+                <!-- 이메일 -->
+                <label for="join_email"><h5>이메일</h5></label>
+                <input id="join_email" type="email" placeholder="이메일">
+                <button id="join_btn" type="submit">완료</button>
+            </form>
         </div>
     </section>
     <footer id="footer">
