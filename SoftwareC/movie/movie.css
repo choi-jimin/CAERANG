@@ -98,7 +98,7 @@ i.fa-solid {
 
 #current_star {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #current_star > i {
@@ -117,13 +117,43 @@ i.fa-solid {
 }
 
     /* section -> Rating */
-
+.star_rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    justify-content: space-around;
+    padding-right: 0.2em;
+    padding-top: 1em;
+    text-align: center;
+    width: 5em;
+}
+       
+.star_rating input {
+    display: none;
+}
+       
+.star_rating label {
+    /*-webkit-text-fill-color: transparent; /* Will override color (regardless of order) 
+    -webkit-text-stroke-width: 2.3px;*/
+    color:#ccc;
+    cursor: pointer;
+}
+       
+.star_rating :checked ~ label {
+    -webkit-text-fill-color: gold;
+}
+       
+/*.star_rating label:hover,
+.star_rating label:hover ~ label {
+    -webkit-text-fill-color: rgb(248, 248, 248);
+}*/
 
     /* 보고싶어요, 보는 중, 영화 촬영지 정보 */
 #movie_user_want {
     display: flex;
     color: rgb(248, 248, 248);
-    padding-top: 170px;
+    padding-top: 150px;
     padding-left: 70px;
     width: 500px;
 }
