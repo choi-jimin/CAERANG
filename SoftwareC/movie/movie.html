@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="movie.js"></script>
 </head>
 
 <body>
@@ -46,19 +47,14 @@
                     <i class="fa-solid fa-star"></i>
                     <h3>5.0</h3>
                 </div>
-                <p>선택한 별점 표시</p>
-                <div class="star_rating">
-                    <!-- https://codepen.io/chris22smith/pen/MJzLJN -->
-                    <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings"/>
-                    <label for="5-stars" class="star pr-4">★</label>
-                    <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings"/>
-                    <label for="4-stars" class="star">★</label>
-                    <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings"/>
-                    <label for="3-stars" class="star">★</label>
-                    <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings"/>
-                    <label for="2-stars" class="star">★</label>
-                    <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
-                    <label for="1-star" class="star">★</label>
+                <div id="star_rating">
+                    <!-- https://gurtn.tistory.com/80 -->
+                    <p>선택한 별점 표시</p>
+                    <span class="star">
+                        ★★★★★
+                        <span>★★★★★</span>
+                        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                      </span>
                 </div>
             </div>
             <div id="movie_user_want">
