@@ -54,21 +54,22 @@
                         ★★★★★
                         <span>★★★★★</span>
                         <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-                      </span>
+                    </span>
                 </div>
+                <!-- <input type="button" value="별점" id="star_btn"> -->
             </div>
             <div id="movie_user_want">
                 <div id="user_want_watch">
                     <h6>보고싶어요</h6>
-                    <a href="" class="movie_user_want_a"><i class="fa-solid fa-folder-closed"></i></a>
+                    <a href="" class="movie_user_want_a"><i class="fa-solid fa-folder-closed" onclick="service()"></i></a>
                 </div>
                 <div id="user_watching">
                     <h6>보는 중</h6>
-                    <a href="" class="movie_user_want_a"><i class="fa-solid fa-laptop"></i></a>
+                    <a href="" class="movie_user_want_a"><i class="fa-solid fa-laptop" onclick="service()"></i></a>
                 </div>
                 <div id="user_want_location">
                     <h6>영화 촬영지 정보</h6>
-                    <a href="" class="movie_user_want_a"><i class="fa-solid fa-camera"></i></a>
+                    <a href="" class="movie_user_want_a"><i class="fa-solid fa-camera" onclick="service()"></i></a>
                 </div>
             </div>
         </div>
@@ -82,7 +83,7 @@
             <h4>코멘트</h4>
             <div id="comment_button">
                 <textarea name="comment" rows="10" cols="50"></textarea>
-                <input type="button" value="완료">
+                <input type="button" value="완료" onclick="service()">
             </div>
             <div class="movie_evaluate_user">
                 <p id="comment_user_name">user name</p>

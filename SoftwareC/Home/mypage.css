@@ -167,6 +167,7 @@ i.fa-pen {
     font-size: 14px;
     margin-right: 10px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 #mypage_comment > div.mypage_review > .mypage_review_in {
