@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mypage.css">
-    <script src="mypage.js"></script>
+    <link rel="stylesheet" href="searchfail.css">
 </head>
 <body>
     <header>
@@ -25,53 +24,20 @@
             </div>
             <div id="login_bar">
                 <a href="/Zoo/home/home.html"><h4>홈</h4></a>
-                <a href=""><h4>주피 님</h4></a>
-                <a href=""><h4>로그아웃</h4></a>
+                <a href=""><h4>로그인</h4></a>
+                <a href=""><h4>회원가입</h4></a>
             </div>
         </nav>
     </header>
     <section id="section">
-        <div id="section_name">
-            <div></div>
-            <h3>마이페이지</h3>
-        </div>
-        <div class="mypage_movie">
-            <i class="fa-regular fa-greater-than"></i>
-            <h4>내가 평가한 영화목록</h4>
-            <i class="fa-solid fa-pen fa-flip-horizontal"></i>
-        </div>
-        <div id="mypage_comment">
-            <div class="mypage_review">
-                <p class="mypage_review_in"><i><b>Spider-Man: No Way Home</b></i></p>
-                <p class="mypage_review_in">2022, 누적관객수, 별점</p>
-                <hr class="mypage_review_in">
-                <p class="mypage_review_in">comment</p>
+        <a href="">
+            <div id="fail">
+                <i class="fa-regular fa-circle-xmark" id="X"></i>
+                <h4>Home으로 돌아가려면 클릭하세요.</h4>
+                <h3>업데이트가 안된 영화이거나, 없는 영화입니다. 다른 검색어를 입력해주세요.</h3>
             </div>
-        </div>
-
-        <div class="mypage_movie">
-            <i class="fa-regular fa-greater-than"></i>
-            <h4>보고싶은 영화</h4>
-            <i class="fa-solid fa-folder-closed fa-flip-horizontal"></i>
-        </div>
-        <div id="mypage_want"></div>
-
-        <script>
-            callFetchMypageSecond();
-        </script>
-
-        <div class="mypage_movie">
-            <i class="fa-regular fa-greater-than"></i>
-            <h4>보는 중 영화</h4>
-            <i class="fa-solid fa-ticket"></i>
-        </div>
-        <div id="mypage_watching"></div>
-
-        <script>
-            callFetchMypageThird();
-        </script>
+        </a>
     </section>
-    <!-- 주토피디아, 주피 프로젝트, 깃허브 링크, 영화 평점 사이트 -->
     <footer id="footer">
         <div id="information">
             <h4 class="information_inner">주토피디아, 주피 프로젝트</h4>

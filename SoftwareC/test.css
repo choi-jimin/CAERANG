@@ -30,7 +30,6 @@ section {
     border-radius: 20px;
     background-color: #f1efe956;
     border: 1px solid rgba(0, 0, 0, 0.03);
-    width: 1100px;
 }
 /* footer 하단 고정 */
 
@@ -306,8 +305,8 @@ i.fa-solid {
 #movie_evaluate > div.movie_evaluate_user {
     margin: 10px 0 10px 0;
     width: 50%;
-    border-top: 1px solid #9191917d;
-    border-bottom: 1px solid #9191917d;
+    border-top: 1px solid #E9DAC1;
+    border-bottom: 1px solid #E9DAC1;
     padding: 8px;
 }
 
